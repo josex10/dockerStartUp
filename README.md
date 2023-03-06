@@ -1,6 +1,8 @@
 # dockerStartUp
 This is a docker start up 
 
+Alpine: Light version is created for containers, best practices is to use that version of linux for containers.
+
 Key Docker commands
 
 docker build: Build a docker image
@@ -8,6 +10,10 @@ docker run: Run a docker image as a container
 docker commit: Commit a docker container as an image
 docker tag: Tag a docker image
 docker login: To login for docker hub
+docker images | head : Show latest images
+docker ps : Show running images
+docker ps -a: Show all latest images running or stopped
+docker 
 
 Image: In Object programming the image is like a class.
 
@@ -57,3 +63,7 @@ Example to create an image on our local machine
 Interactive Command:
 
 exit(exit of the command line but the container still running): Ctrl+p+q
+
+
+****Volumes
+
