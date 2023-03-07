@@ -72,6 +72,14 @@ exit(exit of the command line but the container still running): Ctrl+p+q
 
 ****Container Life Cycle
 
+****Bind Mount 
+It´s to share a machinehost folder to a container 
+It´s the easy way to share or keep documents on the container
+It´s no secure at all because if you give acces to the container to sensitive data and you´re using an image not wecure probably will be dangerous
+To use use the following command
+	docker run -d --name db -v src/documents/docker/mongo:src/db mongo
+For bind mounts docker uses -v and the path of the machinehost then the path of the container
+	-v (machinehost path:container path)
 
 ****Volumes
 
