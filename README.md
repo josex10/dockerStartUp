@@ -20,7 +20,8 @@ docker exec:
 docker logs: See the last logs
 docker logs -f:  See the logs on live
 docker logs --tail 10 -f: See the last 10 lines of the logs on live
-
+docker volumes: show all the volumes in docker
+docker volumne create volumeName: create a volumne 
 Image: In Object programming the image is like a class.
 
 Container: In object programming the container is like an object.
@@ -31,6 +32,7 @@ Keys:
 -it: Interactive
 -p: port mapping (port container:port of the app)
 -f: Force process
+-v: mount bind
 
 
 Example to create an image on our local machine
@@ -73,6 +75,7 @@ exit(exit of the command line but the container still running): Ctrl+p+q
 ****Container Life Cycle
 
 ****Bind Mount 
+
 It´s to share a machinehost folder to a container 
 It´s the easy way to share or keep documents on the container
 It´s no secure at all because if you give acces to the container to sensitive data and you´re using an image not wecure probably will be dangerous
@@ -82,7 +85,12 @@ For bind mounts docker uses -v and the path of the machinehost then the path of 
 	-v (machinehost path:container path)
 
 ****Volumes
-
+It´s like a private folder into the container but its persistant
+It´s more secure because only the container know where it is located and also only the container can see the files into it
+To use it it´s neccessary to add the following command:
+	docker volume create volumeName 
+O
+--mount src:
 
 
 *********
