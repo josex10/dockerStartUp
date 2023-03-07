@@ -13,7 +13,13 @@ docker login: To login for docker hub
 docker images | head : Show latest images
 docker ps : Show running images
 docker ps -a: Show all latest images running or stopped
-docker 
+docker rename (dockername/dockerid) (newname)
+docker rm (dockername/dockerid) 
+docker container prune: Remove all the containers stoped
+docker exec: 
+docker logs: See the last logs
+docker logs -f:  See the logs on live
+docker logs --tail 10 -f: See the last 10 lines of the logs on live
 
 Image: In Object programming the image is like a class.
 
@@ -64,6 +70,23 @@ Interactive Command:
 
 exit(exit of the command line but the container still running): Ctrl+p+q
 
+****Container Life Cycle
+
 
 ****Volumes
+
+
+
+*********
+UBUNTU
+- All the ubuntu commands return an exit code.
+- The exit code 0 is everithing is correct.
+- The exit code != 0 probablly an error was occur on the process.
+
+
+Commands: 
+  - ls: List all the file names of the root or path located
+  - ls -lac: List all the files of the roor or path located but with all the information of the each folder.
+  - cat /etc/lsb-release: Show information about the Linux version installed
+  
 
