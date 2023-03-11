@@ -22,6 +22,7 @@ This is a docker start up
 - docker logs --tail 10 -f: See the last 10 lines of the logs on live
 - docker volumes: show all the volumes in docker
 - docker volumne create volumeName: create a volumne 
+- docker system prune
 
 **Image**: In Object programming the image is like a class.
 
@@ -91,7 +92,21 @@ This is a docker start up
 - To use it it´s neccessary to add the following command:
 	- docker volume create volumeName 
 	- Or: --mount src:
-
+	- 
+****Docker Compose****
+- docker-compose up
+- docker-compse up -d
+- docker network ls
+- docker network inspect networkname
+- docker-compose logs
+- docker-compose logs containername
+- docker-compose logs -f containername
+- docker compose logs -f containername1 containername2 ...
+- docker-compose exec containername fn -> docker-compose exec app bash (it's not neccesary the interactive mode)
+- docker-compose ps
+- docker-compose down
+- docker-compose build
+- docker-compose -d --scale containername=numberOfContainers
 
 *********
 
